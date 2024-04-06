@@ -1,0 +1,7 @@
+back-to-top:
+  version: 1.1
+  css:
+    theme:
+      css/back-to-top.css: {}
+  js:
+    js/back-to-top.js: {}

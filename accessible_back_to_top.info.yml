@@ -1,0 +1,5 @@
+name: Accessible Back To Top
+type: module
+description: 'Adds an accessible back to top button'
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10
