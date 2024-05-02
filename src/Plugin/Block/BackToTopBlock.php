@@ -19,7 +19,7 @@ class BackToTopBlock extends BlockBase {
    */
   public function build() {
     $build['content'] = [
-      '#markup' => '<div aria-hidden="true" role="button" tabindex="0" class="back-to-top"><div class="arrow">Back to top</div></div>',
+      '#markup' => '<div aria-hidden="true" role="button" tabindex="0" class="back-to-top"><div class="icon"></div><div class="text">Top</div></div>',
     ];
     $build['#attached']['library'][] = 'accessible_back_to_top/back-to-top';
     return $build;

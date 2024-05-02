@@ -26,5 +26,16 @@
         document.querySelector('.skip-link').focus();
       }
     });
+
+    // hide the button if scroll Y value is less than 1000px
+    el.style.display = "none";
+    document.addEventListener('scroll', ()=>{
+      if (Math.round(window.scrollY) < 800) {
+        el.style.display = "none";
+      }
+      else {
+        el.style.display = "flex";
+      }
+    })
   });
 })();
