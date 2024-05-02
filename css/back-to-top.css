@@ -1,37 +1,36 @@
 
 .back-to-top {
-  border: 1px solid #999;
-  width: 50px;
-  height: 50px;
+  background-color: #e4e4e4;
+  width: 70px;
+  height: 70px;
   border-radius: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  left: 95%;
+  position: fixed;
+  bottom: 5svh;
+  left: 90vw;
   cursor: pointer;
 }
 
-.back-to-top .arrow {
-  font-size: 0;
+.back-to-top .text {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5px;
 }
 
-.back-to-top .arrow::before {
-  content: '';
+.back-to-top .icon {
   display: block;
-  width: 20px;
-  height: 20px;
-  border-top: solid 2px #5a5a5a;
-  border-right: solid 2px #5a5a5a;
-  transform: rotate(-45deg);
+  width: 30px;
+  height: 30px;
+  background: url('../images/arrow.svg') no-repeat center;
 }
 
 .back-to-top:hover {
-  border-color: rgba(0,0,0,.3);
-  transform: translateY(1px);
+  opacity: .5;
   transition: all .5s ease;
 }
